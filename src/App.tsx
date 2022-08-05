@@ -12,7 +12,7 @@ const App:React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/CoincapTS" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="crypto/:id" element={<CryptoPage/>}/>
         </Route>
