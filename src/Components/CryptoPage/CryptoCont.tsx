@@ -7,7 +7,7 @@ import CryptoPageInfoRight from "./CryptoPageInfoRight";
 const CryptoCont:React.FC<ICryptoCont> = ({ crypto, id }: ICryptoCont) => {
   return (
     <>
-      <div className="crypto__info__cont">
+      <div className="crypto__info">
         <CryptoPageInfoLeft crypto={crypto}/>
         <CryptoPageInfoRight crypto={crypto}/>
       </div>

@@ -45,6 +45,12 @@ export const changeWallet = (crypto: oneCryptoType) => {
   };
 };
 
+export const removeCryptoFromWallet = (crypto: oneCryptoType) => {
+  return (dispatch: Dispatch<WalletCryptoAction>) => {
+    dispatch({ type: walletCryptoActionTypes.REMOVE_CRYPTO_FROM_WALLET, payload: crypto });
+  };
+};
+
 export const getCryptoHistory = (id: string | undefined) => {
   return async (dispatch: Dispatch<getCryptoHistoryAction>) => {
     try {

@@ -1,28 +1,26 @@
-.crypto__info__cont {
+.crypto__info {
     display: flex;
     gap: 10%;
     justify-content: start;
-}
-
-.crypto__info__right {
+    &__child-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 75%;
     gap: 15%;
-    .right__cont {
-        h3 {
-            font-size: 1.1em;
-            font-weight: 700;
-            margin: 10% 0 5% 0;
-            color: rgb(41, 41, 41);
-        }
-        p {
-            font-weight: 600;
-        }
     }
-}
+    &__cont__right {
+            h3 {
+                font-size: 1.1em;
+                font-weight: 700;
+                margin: 10% 0 5% 0;
+                color: rgb(41, 41, 41);
+            }
+            p {
+                font-weight: 600;
+            }
+    }
 
-.crypto__info__left {
+    &__child-left {
     width: 25%;
     display: flex;
     gap: 10%;
@@ -36,7 +34,8 @@
     h1 {
         font-size: 2em;
     }
-    .left__price {
+    }
+    &__price__left {
         h3 {
             font-size: 1.1em;
             margin-bottom: 3%;
@@ -45,7 +44,7 @@
             font-size: 1.4em;
         }
     }
-    .left__name {
+    &__name__left {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -63,5 +62,4 @@
 .crypto__graph {
     margin: 5% auto;
     font-size: .9em;
-    
 }

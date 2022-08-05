@@ -1,0 +1,20 @@
+.wallet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__child-element {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr .5fr;
+        padding: 2%;
+        align-items: center;
+        background-color: gray;
+        .button__remove__crypto {
+            background-color: rgb(185, 138, 138);
+            padding: 10px;
+            border: none;
+        }
+        .button__remove__crypto:hover {
+            background-color: rgb(173, 86, 86);
+        }
+    }
+}

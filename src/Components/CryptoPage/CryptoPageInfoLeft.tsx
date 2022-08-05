@@ -6,15 +6,15 @@ import { ICryptoPageInfoLeft } from "../../types/Crypto";
 const CryptoPageInfoLeft:React.FC<ICryptoPageInfoLeft> = ({ crypto } : ICryptoPageInfoLeft) => {
   const { changeWallet } = useAction();
   return (
-    <div className="crypto__info__left">
-      <div className="left__name crypto__info__left__cont">
+    <div className="crypto__info__child-left">
+      <div className="crypto__info__name__left crypto__info__cont__left">
         <h1>{crypto.name}</h1>
         <p>{crypto.symbol}</p>
         <button className="button__add-crypto left__button" onClick={() => changeWallet(crypto)}>
           +
         </button>
       </div>
-      <div className="left__price crypto__info__left__cont">
+      <div className="crypto__info__price__left crypto__info__cont__left">
         <h3>Price:</h3>
         <p>${convertNumber(crypto.priceUsd)}</p>
       </div>
