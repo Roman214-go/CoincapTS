@@ -23,7 +23,7 @@ const WalletPage:React.FC = () => {
             <p>Price: ${convertNumber(item.priceUsd)}</p>
             <p>Market Cap: ${convertNumber(item.marketCapUsd)}</p>
             <button className="button__remove__crypto" onClick={() => removeCryptoFromWallet(item)}>
-              Remove all {item.name}
+              Remove
             </button>
           </div>
         ))

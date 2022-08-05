@@ -14,7 +14,7 @@ const Header:React.FC = () => {
   return (
     <header className="header">
       <div className="header__layout">
-        <div className="logo header__logo"><Link to="/CoincapTS">CoinCap</Link></div>
+        <div className="header__logo"><Link to="/CoincapTS">CoinCap</Link></div>
         <div className="header__popular-crypto">
           {
             allCrypto.length != 0 && <HeaderPopularCrypto popularCrypto={allCrypto}/>
